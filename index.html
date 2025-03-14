@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRIESTI SYMPOSIUM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.gstatic.com" crossorigin rel="stylesheet">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="left logo.png" alt="Left Logo" class="logo">
+            <div> 
+                <h1>Sri Ranganathar Institute of Engineering and Technology</h1>
+                <h2 class="autonomous-text">(An Autonomous Institution)</h2>
+            </div>
+            <img src="right logo.png" alt="Right Logo" class="logo">
+        </div>
+        <h2 class="symposium-name" data-text="SRISTI">SRISTI</h2>
+        <div class="symposium-logo">
+            <img src="symposium-logo.png" alt="Symposium Logo">
+        </div>
+    </header>
+    
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="background.webm" type="video/webm">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Departments Section -->
+<section class="departments">
+    <h1>Departments</h1>
+    <div class="department-container">
+
+        <!-- CSE -->
+        <div class="department-card" style="background-image: url('departments/cse-bg.jpg');" onclick="location.href='cse.html'">
+            <h3>Computer Science & Engineering (CSE)</h3>
+        </div>
+
+        <!-- IT & AIDS -->
+        <div class="department-card" style="background-image: url('departments/it-aids-bg.jpg');" onclick="location.href='it-aids.html'">
+            <h3>Information Technology & Artificial Intelligence & Data Science</h3>
+        </div>
+
+        <!-- Automobile -->
+        <div class="department-card" style="background-image: url('departments/automobile-bg.jpg');" onclick="location.href='Science and Humanities.html'">
+            <h3>Science and Humanities</h3>
+        </div>
+
+        <!-- Civil -->
+        <div class="department-card" style="background-image: url('departments/civil-bg.jpg');" onclick="location.href='civil.html'">
+            <h3>Civil Engineering</h3>
+        </div>
+
+        <!-- Mechanical -->
+        <div class="department-card" style="background-image: url('departments/mechanical-bg.jpg');" onclick="location.href='mechanical.html'">
+            <h3>Mechanical Engineering</h3>
+        </div>
+
+        <!-- Electrical and Electronics Engineering -->
+        <div class="department-card" style="background-image: url('departments/eee-bg.jpg');" onclick="location.href='eee.html'">
+            <h3>Electrical and Electronics Engineering</h3>
+        </div>
+        <!-- Electronics and Communication Engineering -->
+        <div class="department-card" style="background-image: url('departments/ece-bg.jpg');" onclick="location.href='ece.html'">
+            <h3>Electronics and Communication Engineering</h3>
+        </div>
+    </div>
+</section>
+
+    
+    <section>
+        <a href="https://forms.gle/tpkVNNJH6YYLozc99" class="register-btn" target="_blank">Register Now</a>
+    </section>
+
+    <footer>
+        <h2>Location</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.790022940787!2d76.98360177504696!3d11.129010389042012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f73f6b6e1159%3A0xf4abd9e6f1a60e7!2sSri%20Ranganathar%20Institute%20of%20Engineering%20and%20Technology%20(SRIET)!5e0!3m2!1sen!2sin!4v1741688786850!5m2!1sen!2sin" 
+            width="300"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <div id="mouse-tracker"></div>
+    <script src="script.js"></script>
+<!-- Loading Screen -->
+<div id="loading">
+    <div class="loader"></div>
+    <h2>Loading...</h2>
+</div>
+<!-- Coordinator & Team Contacts Section -->
+<section class="contacts">
+    <h2>Coordinator & Team Contacts</h2>
+    <div class="contact-container">
+
+        <!-- Coordinator -->
+        <div class="contact-card">
+            <h3>Sathish</h3>
+            <p>Coordinator</p>
+            <p>Email: johndoe@example.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </div>
+
+        <!-- Team Member 1 -->
+        <div class="contact-card">
+            <h3>Gokul</h3>
+            <p>Event Organizer</p>
+            <p>Email: alice@example.com</p>
+            <p>Phone: +91 98765 12345</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="contact-card">
+            <h3>Melvin</h3>
+            <p>Technical Support</p>
+            <p>Email: bob@example.com</p>
+            <p>Phone: +91 87654 32109</p>
+        </div>
+    </div>
+</section>
+
+    
+</body>
+</html>

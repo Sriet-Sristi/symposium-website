@@ -1,0 +1,558 @@
+@import url('https://fonts.gstatic.com" crossorigin');
+
+body {
+        font-family: 'Orbitron', sans-serif;
+        background-image: 'background.mp4'
+                    no-repeat center center fixed;
+        background-size: cover;
+        color: #00ffea;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+/* College Name Styling */
+.college-info h1 {
+    font-family: 'Orbitron', sans-serif; /* Cyberpunk Font */
+    font-size: 45px; /* Bigger Text */
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #00ffea; /* Neon Blue */
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00bfff;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    animation: flicker 1.5s infinite alternate;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffea;
+}
+
+/* Flickering Glow Animation */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00bfff;
+    }
+    50% {
+        opacity: 0.9;
+        text-shadow: 0 0 15px #00ffea, 0 0 25px #00bfff, 0 0 35px #0088ff;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00bfff;
+    }
+}
+
+
+.college-name {
+    margin-bottom: 5px;  /* Adjust space between the two lines */
+}
+
+.college-info h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffea;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-wrap: nowrap; /* Prevents stacking */
+    }
+    .logo {
+        width: 60px; /* Adjust logo size for smaller screens */
+    }
+    .college-info h1 {
+        font-size: 28px; /* Slightly smaller for mobile */
+    }
+}
+
+.autonomous-text {
+    margin-top: 0;
+    font-size: 18px;
+    font-style: italic;
+    color: #ffaa00;
+}
+
+.logo {
+    width: 80px;  /* Adjust size as needed */
+    height: auto;
+}
+
+.college-info {
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 0 0 10px #00ffea;
+}
+
+.autonomous-text {
+    font-size: 18px;
+    font-style: italic;
+    color: #ffaa00;  /* Different color for emphasis */
+}
+
+.symposium-logo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.symposium-logo img {
+    width: 200px;  /* Adjust size as needed */
+    height: auto;
+}
+
+/* Symposium Name - Cyber Glitch Effect */
+.symposium-name {
+    font-size: 50px; /* Bigger Text */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffea; /* Cyber Blue */
+    text-align: center;
+    position: relative;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00bfff;
+    animation: flicker 1.5s infinite alternate;
+    margin-top: 10px;
+}
+
+/* Cyberpunk Flicker Animation */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00bfff;
+    }
+    50% {
+        opacity: 0.8;
+        text-shadow: 0 0 15px #00ffea, 0 0 25px #00bfff, 0 0 35px #0088ff;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00bfff;
+    }
+}
+
+/* Additional Glitch Effect */
+.symposium-name::before,
+.symposium-name::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #ff0077; /* Neon Pink Glitch */
+    opacity: 0.75;
+    clip-path: inset(0 0 0 0);
+}
+
+.symposium-name::before {
+    animation: glitch1 1.5s infinite linear alternate;
+}
+
+.symposium-name::after {
+    animation: glitch2 1.5s infinite linear alternate;
+}
+
+@keyframes glitch1 {
+    0% {
+        clip-path: inset(20% 0 0 0);
+        transform: translateX(-2px);
+    }
+    50% {
+        clip-path: inset(50% 0 0 0);
+        transform: translateX(2px);
+    }
+    100% {
+        clip-path: inset(80% 0 0 0);
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes glitch2 {
+    0% {
+        clip-path: inset(0 0 80% 0);
+        transform: translateX(2px);
+    }
+    50% {
+        clip-path: inset(0 0 50% 0);
+        transform: translateX(-2px);
+    }
+    100% {
+        clip-path: inset(0 0 20% 0);
+        transform: translateX(2px);
+    }
+}
+
+h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+h1, h2 {
+    margin: 10px 0;
+    text-shadow: 0 0 10px #00ffea;
+}
+
+.register-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #00ffea;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background: #007acc;
+    transform: scale(1.1);
+}
+
+.events {
+    padding: 20px;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.event-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ffea;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.event-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffea;
+}
+
+/* Button Styling - Gradient Background with Animation */
+button, .register-btn, a {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    background: linear-gradient(to right, #007acc, #00ffea);
+    color: #000;
+    transition: background 0.4s ease-in-out, transform 0.3s;
+    background-size: 200% 100%;
+}
+
+/* Hover Effect - Animate Gradient from Left to Right */
+button:hover, .register-btn:hover, a:hover {
+    background-position: right center;
+    transform: scale(1.05);
+}
+
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures video fills the screen */
+    z-index: -1;
+}
+
+body {
+    color: #00ffea;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Dark overlay for better readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    #bg-video {
+        display: none; /* Hide video on smaller screens */
+    }
+    body {
+        background: url('background.mp4') no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+body {
+    background: url('srietf.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffea;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide Video on Mobile & Use Image Instead */
+@media (max-width: 768px) {
+    #bg-video {
+        display: block; /* Hide video on mobile to prevent issues */
+    }
+    body {
+        background: url('background.mp4  ') no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+/* Map Container */
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px; /* Optional rounded corners */
+    overflow: hidden; /* Prevents scroll issues */
+}
+
+/* Responsive Map for Mobile */
+@media (max-width: 768px) {
+    .map-container {
+        height: 250px; /* Adjust height for mobile */
+        max-width: 90%; /* Reduce width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        height: 200px; /* Smaller height for very small screens */
+    }
+}
+
+#cyber-ball {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #00ffea 30%, rgba(0, 255, 234, 0.2) 70%);
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00ffea, 0 0 30px rgba(0, 255, 234, 0.5);
+    pointer-events: none; /* Prevents interference with clicks */
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s linear; /* Smooth movement */
+    z-index: 9999; /* Ensure it's on top */
+}
+
+/* Full-Screen Loading Overlay */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: #00ffea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    z-index: 9999;
+}
+
+/* Loader Animation */
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #00ffea;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+/* Spinning Effect */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide Loading Screen After Page Load */
+.hidden {
+    display: none;
+}
+/* Departments Section */
+.departments {
+    padding: 40px 20px;
+}
+
+/* Department Container */
+.department-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Department Cards */
+.department-card {
+    width: 300px; /* Increased size */
+    height: 200px; /* Taller boxes */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Overlay Effect for Better Readability */
+.department-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+/* Text inside Department Card */
+.department-card h3 {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hover Effects */
+.department-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 255, 234, 0.9);
+}
+
+.department-card:hover::before {
+    background: rgba(0, 0, 0, 0.4); /* Lighter overlay on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .department-card {
+        width: 100%; /* Full width on mobile */
+        height: 150px;
+    }
+}
+
+/* Contacts Section */
+.contacts {
+    padding: 40px 20px;
+    color: #00ffea;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Contact Cards */
+.contact-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ffea;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.6);
+}
+
+/* Contact Card Hover Effect */
+.contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffea;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
